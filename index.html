@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-gray-900">
+
+    <header class="lg:flex items-center justify-center gap-20 sm:flex-row-reverse h-screen">
+      <nav class="fixed w-full py-4 px-4 top-0 left-0 grid grid-cols-3 items-center justify-center gap-4">
+        <h1 class="text-center text-purple-600 condensed-bold lowercase font-bold text-2xl">dumisa</h1>
+
+        <ul id="navigation" class="flex gap-4 items-center justify-around bg-gray-800 rounded-full py-4 text-white rajdhani-bold *:cursor-pointer *:py-4 *:px-4">
+          <li id="homeNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">home</li>
+          <li id="aboutNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">about</li>
+          <li id="skillsNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">skills</li>
+          <li id="projectsNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">projects</li>
+        </ul>
+
+        <div class="w-full flex items-center justify-center">
+          <button type="button" class="bg-gradient-to-r from-purple-600 to-indigo-700  rounded-full text-white condensed-bold  shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4">Email US</button>
+        </div>
+      </nav>
+
+
+      <article class="flex flex-col gap-8 w-[350px] ">
+
+<h1 class="condensed-bold text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-700"><span id="greeting">Jambo</span><span id="greetLanguage">(Swahili) </h1>  
+
+<p class="text-white condensed-bold text-lg" id="type"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae possimus nam magni sint, quod explicabo ullam reiciendis accusamus cupiditate.</p> 
+
+  <p class="text-white condensed-bold text-lg"> You're warmly welcomed in my personal portfolio. As you already have read from the heading and seen from the footer, I'm <span class="highlight">Dumisa Sakhile</span>. I am a beginner <span class="highlight">Frontend developer</span> who is a big fan of <span class="highlight">Vanilla JS</span> and<span class="highlight"> Custom CSS</span>. </p>
+  
+  
+<button id="openAbout" class="bg-gradient-to-r from-purple-600 to-indigo-700  rounded-full text-white condensed-bold  shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4">Learn more About Me</button>
+  
+</article>
+
+<img src="./public/image-from-rawpixel-id-12137309-png.png" alt="Image by rawpixel.com" class="w-[300px] before:content-[url(./public/blob.svg)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-50 before:flex before:items-center before:justify-center text-white text-center">
+
+
+
+    </header>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
