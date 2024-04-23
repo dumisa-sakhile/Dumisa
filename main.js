@@ -1,7 +1,5 @@
 import './style.css'
 
-
-
 document.addEventListener("DOMContentLoaded", ()=>{
 document.querySelector("#about").innerHTML = `<article
         class="bg-gray-800 min-w-[300px] max-w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
