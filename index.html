@@ -20,60 +20,36 @@
     <meta name="description" content="Dumisa Sakhile is a novice Backend developer of NodeJS & ExpressJS. He also has the basics of Frontend dev">
     <title>Dumisa Sakhile</title>
   </head>
+
   <body
-    class="bg-gray-900 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-purple-700 scrollbar-track-inherit hover:scrollbar-thumb-purple-900 flex flex-col items-center justify-center gap-1">
-    <header
-      class="sm:flex flex-col items-center justify-center h-screen lg:flex-row-reverse gap-20" id="hero">
-      <nav
-        class="fixed w-full py-4 px-4 top-0 left-0 grid grid-cols-3 items-center justify-center gap-4 z-20">
+    class="bg-gray-900 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-purple-700 scrollbar-track-inherit hover:scrollbar-thumb-purple-900 flex flex-col items-center justify-center gap-10">
+
+<header class="flex flex-col-reverse  md:flex-row items-center justify-center h-screen lg:flex-row-reverse lg:gap-20" id="hero">   
+<nav class="fixed w-full py-4 px-4 top-0 left-0 grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4 z-20">
+<h1 class="text-center text-purple-600 condensed-bold lowercase font-bold text-2xl">dumisa</h1>
+
+<ul id="navigation" class="hidden lg:flex lg:gap-4 lg:items-center lg:justify-around lg:bg-gray-800 lg:rounded-full lg:py-2 lg:text-white lg:rajdhani-bold *:cursor-pointer *:py-2 *:px-4 ring-[1px] ring-purple-400">
+  
+<li id="heroNav" class="bg-gradient-to-l from-indigo-600 to-purple-700 rounded-full hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">home</li>
+<li id="aboutNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">about</li>
+<li id="skillsNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">skills</li>
+<li id="projectsNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">projects</li>
+</ul>
+
+<div class="hidden md:flex w-full items-center justify-center">
+<button type="button" class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4" id="emailUs">Email US</button>
+</div>
+</nav>
+
+      <article class="flex flex-col gap-8 w-[300px] md:w-[350px]">
         <h1
-          class="text-center text-purple-600 condensed-bold lowercase font-bold text-2xl">
-          dumisa
-        </h1>
-
-        <ul
-          id="navigation"
-          class="flex gap-4 items-center justify-around bg-gray-800 rounded-full py-4 text-white rajdhani-bold *:cursor-pointer *:py-4 *:px-4 ring-[1px] ring-purple-400">
-          <li
-            id="heroNav"
-            class="bg-gradient-to-l from-indigo-600 to-purple-700 rounded-full hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">
-            home
-          </li>
-          <li
-            id="aboutNav"
-            class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">
-            about
-          </li>
-          <li
-            id="skillsNav"
-            class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">
-            skills
-          </li>
-          <li
-            id="projectsNav"
-            class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">
-            projects
-          </li>
-        </ul>
-
-        <div class="w-full flex items-center justify-center">
-          <button
-            type="button"
-            class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4" id="emailUs">
-            Email US
-          </button>
-        </div>
-      </nav>
-
-      <article class="flex flex-col gap-8 w-[350px]">
-        <h1
-          class="rajdhani-bold text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500">
+          class="rajdhani-bold text-lg lg:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500">
           <span id="greeting">Jambo</span>&nbsp;<span id="greetLanguage text-sm"
             >(Swahili)</span
           >I'm Dumisa&nbsp;Sakhile, a Backend developer
         </h1>
 
-        <p class="text-white condensed-bold text-lg dm-sans" id="type">
+        <p class="text-white condensed-bold text-sm lg:text-lg dm-sans" id="type">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
           molestiae possimus nam magni sint, quod explicabo ullam reiciendis
           accusamus cupiditate.
@@ -82,21 +58,21 @@
         <button
           id="openAbout"
           class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4">
-          Learn more About Me
+          Learn more
         </button>
       </article>
 
       <div
-        class="w-[350px] flex items-center justify-cente h-full *:-rotate-12">
+        class="w-[300px] md:w-[350px] flex items-center justify-center h-full *:-rotate-12">
         <img
           src="/image-from-rawpixel-id-12137309-png.png"
           alt="Image by rawpixel.com"
-          class="w-[350px] absolute z-10" />
+          class="w-[250px] lg:w-[350px] absolute z-10" />
 
         <img
           src="/blob.svg"
           alt="Image by rawpixel.com"
-          class="w-[350px] absolute z-0 scale-150" />
+          class="w-[250px] lg:w-[350px] absolute z-0 scale-150" />
       </div>
     </header>
 
@@ -104,37 +80,94 @@
       id="about"
       class="w-full min-h-screen flex flex-row gap-4 items-center flex-wrap justify-center"></section>
 
-    <section
-      id="skills"
-      class="w-full min-h-screen flex flex-row flex-wrap gap-10 items-center justify-center"></section>
 
-    <section
-      id="projects"
-      class="w-full min-h-screen flex flex-row gap-4 items-center justify-center">
+
+<section id="skills" class="w-full min-h-screen flex flex-row flex-wrap gap-10 items-center justify-center">
+
+<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">basic skills</h1>
+
+<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress">
+<img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html">
+</div>
+          
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css" /></div>
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="js" /></div>
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg" alt="sass" /></div>
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwindcss" /></div>
+
+
+        </div>
+</main>
+
+<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase"> backend development</h1>
+
+<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+          
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="nodejs" /></div>
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="expressjs" /></div>
+
+</div></main>
+
+<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">Databases</h1>
+
+<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" /></div>
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg" alt="supabase" /></div>
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" /></div>
+
+</div></main>
+
+<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">Tooling</h1>
+
+<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+
+ <div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" class="w-[70%]" alt="Vitejs" /></div>
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg" alt="npmjs" /></div>
+
+</div></main>
+
+<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">version control</h1>
+
+<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+        
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" /></div>
+
+<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="github"  class="w-[70%]" /></div>
+
+</div></main>
+
+    </section>
+
+
+
+<section id="projects" class="w-full min-h-screen flex flex-row gap-4 items-center justify-center flex-wrap">
+
+<article class="bg-gray-800 w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
+
+<h1 class="text-white text-lg rajdhani-medium text-justify capitalize">Movie and Tv Series</h1>
+<img src="/movie.svg" alt="TMDB" class="w-[50%]" />
+<p class="text-white text-md rajdhani-medium">Using the data from the TopMoviesDB, this project presents a list of Movies and Tv Series information with their trailers. It also provides recommendations for what to watch, as well as similar movies or series.</p>
+
+<a href="http://motion-pictures.netlify.app" target="_blank" class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4">Explore movies & TV Series</a>
+</article>
+
       <article
-        class="bg-gray-800 min-w-[300px] max-w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
-        <h1 class="text-white text-lg rajdhani-medium text-justify capitalize">
-          Movie and Tv Series
-        </h1>
-        <img src="/movie.svg" alt="TMDB" class="w-[50%]" />
-
-        <p class="text-white text-md rajdhani-medium">
-          Using the data from the TopMoviesDB, this project presents a list of
-          Movies and Tv Series information with their trailers. It also provides
-          recommendations for what to watch, as well as similar movies or
-          series.
-        </p>
-
-        <a
-          href="http://motion-pictures.netlify.app"
-          target="_blank"
-          class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4"
-          >Explore movies & TV Series</a
-        >
-      </article>
-
-      <article
-        class="bg-gray-800 min-w-[300px] max-w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
+        class="bg-gray-800  w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
         <h1 class="text-white text-lg rajdhani-medium text-justify capitalize">
           REST Country
         </h1>
@@ -155,7 +188,7 @@
       </article>
 
       <article
-        class="bg-gray-800 min-w-[300px] max-w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
+        class="bg-gray-800  w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
         <h1 class="text-white text-lg rajdhani-medium text-justify capitalize">
           The Holy Bible
         </h1>
@@ -177,7 +210,6 @@
 
     <section
       class="hidden fixed top-0 left-0 w-full h-full bg-modal z-20 flex justify-center items-center" id="contact">
-
 
       <form
         id="form"
