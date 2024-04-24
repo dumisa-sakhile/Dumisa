@@ -250,3 +250,13 @@ page.addEventListener("mouseover", (ev) => {
 });
 
 
+$("#form").addEventListener("submit", (e) => {
+
+e.preventDefault();
+
+})
+
+
+$("#openAbout").addEventListener("click",()=>{
+  aboutNav.click();
+});
