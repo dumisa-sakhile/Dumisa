@@ -260,3 +260,24 @@ e.preventDefault();
 $("#openAbout").addEventListener("click",()=>{
   aboutNav.click();
 });
+
+$("#share").addEventListener("click",function(){
+
+  if (navigator.share) {
+    // Share data when a button is clicked
+    this.addEventListener("click", async () => {
+      try {
+        // Share text, title, and URL
+        await navigator.share({
+          title: "Dumisa's Portfolio",
+          text: "Link to Dumisa's Portfolio",
+          url: "https://www.dumisa.vercel.app",
+        });
+        console.log("Data was shared successfully");
+      } catch (err) {
+        console.error("Error:", err.message);
+      }
+    });
+  } 
+
+});
