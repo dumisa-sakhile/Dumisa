@@ -160,3 +160,93 @@ document.querySelector("#about").innerHTML = `<article
 </div></main>`;     
 })
 
+function $(element) {
+  return document.querySelector(element);
+}
+
+function $$(element) {
+  return document.querySelectorAll(element);
+}
+
+function hidden(element) {
+  element.classList.add("hidden");
+}
+
+function show(element) {
+  element.classList.remove("hidden");
+}
+
+
+const emailUs = $("#emailUs");
+const cancel = $("#cancel");
+emailUs.addEventListener("click", () => {
+  show($("#contact"));
+  document.body.classList.add("overflow-hidden");
+});
+cancel.addEventListener("click", () => {
+  hidden($("#contact"));
+  document.body.classList.remove("overflow-hidden");
+});
+
+
+const hero = $("#hero");
+const about = $("#about");
+const skills = $("#skills");
+const projects = $("#projects");
+
+const pagesList = [hero, about, skills, projects];
+
+const heroNav = $("#heroNav");
+const aboutNav = $("#aboutNav");
+const skillsNav = $("#skillsNav");
+const projectsNav = $("#projectsNav");
+
+const scrollOptions = {
+  behavior: "smooth",
+  block: "start",
+};
+
+const removeClass = () => {
+
+$$("#navigation li").forEach((list)=>{
+
+    list.classList.remove("bg-gradient-to-l");
+    list.classList.remove("from-indigo-600");
+    list.classList.remove("to-purple-700");
+    list.classList.remove("rounded-full");
+})
+};
+$$("#navigation li").forEach((li) => {
+
+  li.addEventListener("click", (ev) => {
+  removeClass();
+  
+    ev.currentTarget.classList.add("bg-gradient-to-l");
+    ev.currentTarget.classList.add("from-indigo-600");
+    ev.currentTarget.classList.add("to-purple-700");
+    ev.currentTarget.classList.add("rounded-full");
+
+    let pageToGoTo = ev.currentTarget.id.replace("Nav","");
+    //console.log(pageToGoTo);
+    $(`#${pageToGoTo}`).scrollIntoView(scrollOptions);
+
+  });
+});
+
+pagesList.forEach((page) => {
+
+page.addEventListener("mouseover", (ev) => {
+  let navToActivate = `${ev.currentTarget.id}Nav`;
+  //console.log(navToActivate);
+
+  removeClass();
+  let activeNav = $(`#${navToActivate}`);
+  activeNav.classList.add("bg-gradient-to-l");
+  activeNav.classList.add("from-indigo-600");
+  activeNav.classList.add("to-purple-700");
+  activeNav.classList.add("rounded-full");
+}); 
+
+});
+
+
