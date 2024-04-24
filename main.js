@@ -263,3 +263,65 @@ greetLanguage.textContent = `   ${greetings[random].language}    `;
 loadGreeting();
 // Greeting end
 
+//typing animation
+
+ let txtSize = 0;
+
+const txtArray = [
+  `I welcome you to my portfolio. I'm Dumisa Sakhile, a NodeJs and Express developer`,
+
+  `Thanks for visiting my site!`,
+
+  `Feel free to contact me if you have any questions.`,
+
+  `Check out my projects page to see some of my work.`,
+
+  `I have experience with HTML, CSS, JavaScript, TailwindCSS, NodeJs & Express, MongoDB, Supabase and Firebase.`,
+
+  `I'm a self-taught developer with a passion for creating web applications that solve real-world problems. I'm always learning and exploring new technologies, and I love collaborating with others to build great things.`,
+
+  `When it comes to creating projects, I like working with APIs (application programming interfaces) and using virtual DOMs (document object models).`,
+
+  `I don't do web design, but I like appealing user interfaces. In all my developments, I try to follow the principles of UI/UX.`,
+
+  `I like to create web apps that resemble native applications.`,
+
+  `The structure of my websites is inspired by native apps. `,
+
+  `Instead of dull and static websites, I am a huge fan of dynamic webs.`,
+
+  `I like data-driven applications; hence, almost all of my projects involve APIs.`,
+
+  `I like modern web applications. `,
+
+  `I like making most of my projects into Progressive Web Applications (PWA).`,
+
+  `I am familiar with Object-oriented programming in JavaScript.`,
+  
+  `I know the basic of ReactJS`
+];
+ 
+ let speed = 100;
+ 
+ let currentTxt = 0;
+ 
+ function typeWriter() {
+   if (txtSize < txtArray[currentTxt].length) {
+     $("#type").innerHTML += txtArray[currentTxt].charAt(txtSize);
+     txtSize++;
+     setTimeout(typeWriter, speed);
+   } else {
+     // switch to next string in array
+     currentTxt = (currentTxt + 1) % txtArray.length;
+     txtSize = 0;
+     // clear previous text
+     document.getElementById("type").innerHTML = "";
+     // start typing new text
+     setTimeout(typeWriter, speed);
+   }
+ }
+ 
+ typeWriter();
+//typing animation
+ 
+
