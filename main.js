@@ -1,6 +1,27 @@
 import './style.css'
 
 document.addEventListener("DOMContentLoaded", ()=>{
+
+$$("img").forEach((e) => {
+  e.setAttribute("onContextMenu", "return false;");
+  e.setAttribute("onerror", "this.src='images/not_found.svg'");
+
+  //e.setAttribute("loading","lazy");
+});
+
+$$("a").forEach((e) => {
+  e.setAttribute("onContextMenu", "return false;");
+
+  e.setAttribute("target", "_blank");
+});
+
+$$(`input`).forEach((e) => {
+  e.setAttribute("autocomplete", "off");
+});
+
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+
 document.querySelector("#about").innerHTML = `<article
         class="bg-gray-800  w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
         <h1 class="text-white text-lg rajdhani-medium text-justify capitalize">
@@ -204,7 +225,7 @@ $("#share").addEventListener("click",function(){
         await navigator.share({
           title: "Dumisa's Portfolio",
           text: "Link to Dumisa's Portfolio",
-          url: "https://www.dumisa.vercel.app",
+          url: "https://dumisa-sakhile.netlify.app/",
         });
         console.log("Data was shared successfully");
       } catch (err) {
