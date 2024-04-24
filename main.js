@@ -235,3 +235,31 @@ $("#share").addEventListener("click",function(){
   } 
 
 });
+
+
+// Greeting
+const greeting = $("#greeting");
+
+const greetLanguage = $("#greetLanguage");
+
+const loadGreeting = async ()=>{
+  
+const res = await fetch("/greetings.json")
+
+const greetings = await res.json()
+
+setInterval(() => {
+
+let round = Math.random();
+ 
+let random = Math.round(round * (greetings.length - 1));
+
+greeting.textContent = `${greetings[random].greeting}`;
+ 
+greetLanguage.textContent = `   ${greetings[random].language}    `;
+
+   },4000)}
+   
+loadGreeting();
+// Greeting end
+
