@@ -17,39 +17,72 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Dumisa Sakhile is a novice Backend developer of NodeJS & ExpressJS. He also has the basics of Frontend dev">
+    <meta
+      name="description"
+      content="Dumisa Sakhile is a novice Backend developer of NodeJS & ExpressJS. He also has the basics of Frontend dev" />
     <title>Dumisa Sakhile</title>
   </head>
 
   <body
     class="bg-gray-900 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-purple-700 scrollbar-track-inherit hover:scrollbar-thumb-purple-900 flex flex-col items-center justify-center gap-10">
+    <header
+      class="flex flex-col-reverse md:flex-row items-center justify-center h-screen lg:flex-row-reverse lg:gap-20"
+      id="hero">
+      <nav
+        class="fixed w-full py-4 px-4 top-0 left-0 grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4 z-20">
+        <h1
+          class="text-center text-purple-600 condensed-bold lowercase font-bold text-2xl">
+          dumisa
+        </h1>
 
-<header class="flex flex-col-reverse  md:flex-row items-center justify-center h-screen lg:flex-row-reverse lg:gap-20" id="hero">   
-<nav class="fixed w-full py-4 px-4 top-0 left-0 grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4 z-20">
-<h1 class="text-center text-purple-600 condensed-bold lowercase font-bold text-2xl">dumisa</h1>
+        <ul
+          id="navigation"
+          class="hidden lg:flex lg:gap-4 lg:items-center lg:justify-around lg:bg-gray-800 lg:rounded-full lg:py-2 lg:text-white lg:rajdhani-bold *:cursor-pointer *:py-2 *:px-4 ring-[1px] ring-purple-400">
+          <li
+            id="heroNav"
+            class="bg-gradient-to-l from-indigo-600 to-purple-700 rounded-full hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">
+            home
+          </li>
+          <li
+            id="aboutNav"
+            class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">
+            about
+          </li>
+          <li
+            id="skillsNav"
+            class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">
+            skills
+          </li>
+          <li
+            id="projectsNav"
+            class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">
+            projects
+          </li>
+        </ul>
 
-<ul id="navigation" class="hidden lg:flex lg:gap-4 lg:items-center lg:justify-around lg:bg-gray-800 lg:rounded-full lg:py-2 lg:text-white lg:rajdhani-bold *:cursor-pointer *:py-2 *:px-4 ring-[1px] ring-purple-400">
-  
-<li id="heroNav" class="bg-gradient-to-l from-indigo-600 to-purple-700 rounded-full hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">home</li>
-<li id="aboutNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">about</li>
-<li id="skillsNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">skills</li>
-<li id="projectsNav" class="hover:bg-gradient-to-l hover:from-indigo-600 hover:to-purple-700 hover:rounded-full">projects</li>
-</ul>
-
-<div class="hidden md:flex w-full items-center justify-center">
-<button type="button" class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4" id="emailUs">Email US</button>
-</div>
-</nav>
+        <div class="hidden md:flex w-full items-center justify-center">
+          <button
+            type="button"
+            class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4"
+            id="emailUs">
+            Email US
+          </button>
+        </div>
+      </nav>
 
       <article class="flex flex-col gap-8 w-[300px] md:w-[350px]">
         <h1
           class="rajdhani-bold text-lg lg:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500">
-          <span id="greeting">Jambo</span>&nbsp;<span id="greetLanguage"
-             class="text-sm">(Swahili)</span
+          <span id="greeting">Jambo</span>&nbsp;<span
+            id="greetLanguage"
+            class="text-sm"
+            >(Swahili)</span
           >,&nbsp;I'm Dumisa&nbsp;Sakhile, a NodeJS Backend developer
         </h1>
 
-        <p class="text-white condensed-bold text-sm lg:text-lg dm-sans" id="type"></p>
+        <p
+          class="text-white condensed-bold text-sm lg:text-lg dm-sans"
+          id="type"></p>
 
         <button
           id="openAbout"
@@ -74,172 +107,536 @@
 
     <section
       id="about"
-      class="w-full min-h-screen flex flex-row gap-4 items-center flex-wrap justify-center"></section>
+      class="w-full min-h-screen flex flex-row gap-4 items-center flex-wrap justify-center">
+      <article
+        class="bg-gray-800 w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center border border-gray-950 hover:bg-gray-900">
+        <h1
+          class="rajdhani-bold text-lg lg:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500 capitalize">
+          who am i?
+        </h1>
 
+        <img
+          src="/image-from-rawpixel-id-12137309-png.png"
+          alt="developer img"
+          class="w-[50%]" />
+        <p class="text-white text-md rajdhani-medium">
+          Sanibonani, Igama lami ngingu
+          <span class="text-violet-500 condensed-bold text-lg"
+            >Sakhile Dumisa</span
+          >. I am a
+          <span class="text-violet-500 condensed-bold text-lg"
+            >beginner Node & Express.js</span
+          >
+          developer. NodeJs is a runtime environment that allows the execution
+          of Javascript outside the browser
+        </p>
 
-
-<section id="skills" class="w-full min-h-screen flex flex-row flex-wrap gap-10 items-center justify-center">
-
-<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
-<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">basic skills</h1>
-
-<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress">
-<img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html">
-</div>
-          
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css" /></div>
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="js" /></div>
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg" alt="sass" /></div>
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwindcss" /></div>
-
-
-        </div>
-</main>
-
-<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
-<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase"> backend development</h1>
-
-<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
-          
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="nodejs" /></div>
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="expressjs" /></div>
-
-</div></main>
-
-<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
-<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">Databases</h1>
-
-<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" /></div>
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg" alt="supabase" /></div>
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" /></div>
-
-</div></main>
-
-<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
-<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">Tooling</h1>
-
-<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
-
- <div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" class="w-[70%]" alt="Vitejs" /></div>
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg" alt="npmjs" /></div>
-
-</div></main>
-
-<main class="flex flex-col gap-4 items-center justify-center flex-wrap">
-<h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">version control</h1>
-
-<div class="flex flex-row gap-4 items-center justify-center flex-wrap">
-        
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" /></div>
-
-<div class="flex items-center justify-center bg-gray-800 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 hover:cursor-progress"><img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="github"  class="w-[70%]" /></div>
-
-</div></main>
-
-    </section>
-
-
-
-<section id="projects" class="w-full min-h-screen flex flex-row gap-4 items-center justify-center flex-wrap">
-
-<article class="bg-gray-800 w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
-
-<h1 class="text-white text-lg rajdhani-medium text-justify capitalize">Movie and Tv Series</h1>
-<img src="/movie.svg" alt="TMDB" class="w-[50%]" />
-<p class="text-white text-md rajdhani-medium">Using the data from the TopMoviesDB, this project presents a list of Movies and Tv Series information with their trailers. It also provides recommendations for what to watch, as well as similar movies or series.</p>
-
-<a href="http://motion-pictures.netlify.app" target="_blank" class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4">Explore movies & TV Series</a>
-</article>
+        <p class="text-white text-md rajdhani-medium">
+          I identify as both web & web app developer. The main difference
+          between a
+          <span class="text-violet-500 condensed-bold text-lg">Web App</span>
+          and a
+          <span class="text-violet-500 condensed-bold text-lg">Website</span> is
+          that websites are
+          <span class="text-violet-500 condensed-bold text-lg">static</span>
+          while web apps are
+          <span class="text-violet-500 condensed-bold text-lg">dynamic</span>,
+          this means that they communicate with the server to send and receive
+          data through
+          <span class="text-violet-500 condensed-bold text-lg"
+            >Http requests</span
+          >.
+        </p>
+      </article>
 
       <article
-        class="bg-gray-800  w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
-        <h1 class="text-white text-lg rajdhani-medium text-justify capitalize">
+        class="bg-gray-800 w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center border border-gray-950 hover:bg-gray-900">
+        <h1
+          class="rajdhani-bold text-lg lg:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500 capitalize">
+          current activities
+        </h1>
+        <div class="flex flex-col items-center justify-center gap-4">
+          <img
+            class="img"
+            src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg"
+            alt="my image"
+            class="w-[200px]" />
+          <img src="/express-svgrepo-com.svg" alt="express" class="w-[150px]" />
+        </div>
+
+        <p class="text-white text-md rajdhani-medium">
+          I'm currently learning
+          <span class="text-violet-500 condensed-bold text-lg"
+            >Backend development</span
+          >, diving deeper into different technologies used for storing data
+          (databases), user authentication and many more&hellip;
+        </p>
+
+        <p class="text-white text-md rajdhani-medium">
+          I'm also studying
+          <span class="text-violet-500 condensed-bold text-lg"
+            >Bis Information Science</span
+          >
+          at the
+          <a
+            href="https://www.up.ac.za/"
+            target="_blank"
+            class="text-violet-500 condensed-bold text-lg"
+            >University of Pretoria</a
+          >, doing my <span class="schoolYear"></span><sup>nd</sup> year.
+        </p>
+      </article>
+
+      <article
+        class="bg-gray-800 w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center border border-gray-950 hover:bg-gray-900">
+        <h1
+          class="rajdhani-bold text-lg lg:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500 capitalize">
+          pending activities
+        </h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          alt="ReactJs"
+          class="w-[200px] grayscale-[50%]" />
+
+        <p class="text-white text-md rajdhani-medium">
+          After competing
+          <span class="text-violet-500 condensed-bold text-lg"
+            >backend development</span
+          >, I am yet to resume learning
+          <span class="text-violet-500 condensed-bold text-lg">ReactJs</span>,
+          <span class="text-violet-500 condensed-bold text-lg">Typescript</span
+          >, &
+          <span class="text-violet-500 condensed-bold text-lg">python</span>.
+          I'll consider learning more languages after accomplishing this
+          goal&hellip;
+        </p>
+      </article>
+    </section>
+
+    <section
+      id="skills"
+      class="w-full min-h-screen flex flex-row flex-wrap gap-10 items-center justify-center">
+      <main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+        <h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">
+          basic skills
+        </h1>
+
+        <div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+              alt="html" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              html
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+              alt="css" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              css
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"
+              alt="js" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              js
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg"
+              alt="sass" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              sass
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+              alt="tailwindcss" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              tailwind css
+            </aside>
+          </div>
+        </div>
+      </main>
+
+      <main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+        <h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">
+          backend development
+        </h1>
+
+        <div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"
+              alt="nodejs" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              node js
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+              alt="expressjs" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              express js
+            </aside>
+          </div>
+        </div>
+      </main>
+
+      <main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+        <h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">
+          Databases
+        </h1>
+
+        <div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+              alt="firebase" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              firebase
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg"
+              alt="supabase" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              supabase
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
+              alt="mongodb" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              mongodb
+            </aside>
+          </div>
+        </div>
+      </main>
+
+      <main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+        <h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">
+          Tooling
+        </h1>
+
+        <div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg"
+              class="w-[70%]"
+              alt="Vitejs" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              vite
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg"
+              alt="npmjs" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              npm
+            </aside>
+          </div>
+        </div>
+      </main>
+
+      <main class="flex flex-col gap-4 items-center justify-center flex-wrap">
+        <h1 class="text-violet-600 rajdhani-medium text-2xl uppercase">
+          version control
+        </h1>
+
+        <div class="flex flex-row gap-4 items-center justify-center flex-wrap">
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+              alt="git" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              git
+            </aside>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center bg-gray-900 rounded-md w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] hover:bg-gray-950 hover:border-dotted hover:cursor-pointer border border-gray-950">
+            <img
+              src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
+              alt="github"
+              class="w-[70%]" />
+            <aside
+              class="absolute flex items-center justify-center w-full h-full bg-gradient-to-l from-indigo-600 to-purple-700 rounded-lg text-lg rajdhani-medium opacity-0 hover:opacity-100 uppercase">
+              github
+            </aside>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section
+      id="projects"
+      class="w-full min-h-screen flex flex-row gap-4 items-center justify-center flex-wrap">
+      <article
+        class="bg-gray-800 w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center border border-gray-950 hover:bg-gray-900">
+        <h1
+          class="rajdhani-bold text-lg lg:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500 capitalize">
+          Movie and Tv Series
+        </h1>
+        <img src="/movie.svg" alt="TMDB" class="w-[50%]" />
+        <div
+          class="flex flex-row flex-wrap justify-center items-center w-full gap-4 py-4">
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium">
+            JS</span
+          >
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium"
+            >CSS</span
+          >
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium"
+            >html</span
+          >
+        </div>
+        <p class="text-white text-md rajdhani-medium">
+          Using the data from the TopMoviesDB, this project presents a list of
+          Movies and Tv Series information with their trailers. It also provides
+          recommendations for what to watch, as well as similar movies or
+          series.
+        </p>
+
+        <div class="grid grid-cols-2 items-center gap-4 justify-center">
+          <a
+            href="http://motion-pictures.netlify.app"
+            target="_blank"
+            class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4 text-center"
+            >Live site</a
+          >
+          <a
+            href="#"
+            class="bg-gray-900 py-4 px-4 text-violet-500 capitalize rounded-full shadow-lg border border-violet-500"
+            target="_blank"
+            >Source code</a
+          >
+        </div>
+      </article>
+
+      <article
+        class="bg-gray-800 w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center border border-gray-950 hover:bg-gray-900">
+        <h1
+          class="rajdhani-bold text-lg lg:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500 capitalize">
           REST Country
         </h1>
         <img src="/world.svg" alt="world" class="w-[50%]" />
-
+        <div
+          class="flex flex-row flex-wrap justify-center items-center w-full gap-4 py-4">
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium">
+            JS</span
+          >
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium"
+            >CSS</span
+          >
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium"
+            >html</span
+          >
+        </div>
         <p class="text-white text-md rajdhani-medium">
           Using the REST Country Api, this project presents a list of countries
           of the world which cab be filtered according to region, or search of a
           particular country to retrieve its information.
         </p>
 
-        <a
-          href="http://the-rest-country.netlify.app"
-          target="_blank"
-          class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4"
-          >Observe countries</a
-        >
+        <div class="grid grid-cols-2 items-center gap-4 justify-center">
+          <a
+            href="http://the-rest-country.netlify.app"
+            target="_blank"
+            class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4 text-center"
+            >Live site</a
+          >
+          <a
+            href="https://github.com/dumisa-sakhile/Rest-Country-Api"
+            class="bg-gray-900 py-4 px-4 text-violet-500 capitalize rounded-full shadow-lg border border-violet-500"
+            target="_blank"
+            >Source code</a
+          >
+        </div>
       </article>
 
       <article
-        class="bg-gray-800  w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
-        <h1 class="text-white text-lg rajdhani-medium text-justify capitalize">
+        class="bg-gray-800 w-[350px] lg:w-[500px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center border border-gray-950 hover:bg-gray-900">
+        <h1
+          class="rajdhani-bold text-lg lg:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500 capitalize">
           The Holy Bible
         </h1>
-        <img src="/gospel.svg" alt="gospel" class="w-[50%]" />
+        <img src="/bible.png" alt="gospel" class="w-[50%]" />
+        <div
+          class="flex flex-row flex-wrap justify-center items-center w-full gap-4 py-4">
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium">
+            JS</span
+          >
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium"
+            >CSS</span
+          >
+          <span
+            class="py-2 px-4 bg-gray-900 rounded-md text-center uppercase text-violet-500 border border-violet-500 rajdhani-medium"
+            >html</span
+          >
+        </div>
         <p class="text-white text-md rajdhani-medium">
           Explore the sacred scriptures of the worlds oldest religion with the
           online version of the Holy Bible
           <span class="condensed">King James Version.</span>
         </p>
 
-        <a
-          href="http://the-holy-bible.netlify.app"
-          target="_blank"
-          class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4"
-          >Read the Holy Bible</a
-        >
+        <div class="grid grid-cols-2 items-center gap-4 justify-center">
+          <a
+            href="http://the-holy-bible.netlify.app"
+            target="_blank"
+            class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-4 px-4 text-center"
+            >Live site</a
+          >
+          <a
+            href="https://github.com/dumisa-sakhile/Holy-Bible-Api"
+            class="bg-gray-900 py-4 px-4 text-violet-500 capitalize rounded-full shadow-lg border border-violet-500"
+            target="_blank"
+            >Source code</a
+          >
+        </div>
       </article>
     </section>
 
     <section
-      class="hidden fixed top-0 left-0 w-full h-full bg-modal z-20 flex justify-center items-center" id="contact">
-
+      class="hidden fixed top-0 left-0 w-full h-full bg-modal z-20 flex justify-center items-center"
+      id="contact">
       <form
         id="form"
-        class=" bg-gray-900 min-w-[300px] max-w-[400px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
+        class="bg-gray-900 min-w-[300px] max-w-[400px] py-4 px-4 rounded-lg shadow flex flex-col gap-4 items-center justify-center">
+        <h1
+          class="text-violet-500 text-lg rajdhani-medium text-justify capitalize">
+          Contact Me
+        </h1>
+        <p class="text-white text-md rajdhani-medium">
+          Feel free to reach out if there is something you want to communicate.
+        </p>
 
-        <h1 class="text-violet-500 text-lg rajdhani-medium text-justify capitalize">
-          Contact Me</h1>
-<p class="text-white text-md rajdhani-medium">Feel free to reach out if there is something you want to communicate.</p>
+        <fieldset
+          class="flex flex-col items-center justify-center w-[90%] min-h-[10px]">
+          <legend>
+            <label
+              for="name"
+              class="text-lg rajdhani-medium text-justify capitalize text-violet-500"
+              >Name</label
+            >
+          </legend>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="What is your name?"
+            class="w-full h-[50px] rounded-md pl-4 bg-gray-800 focus:outline-none focus:ring ring-purple-600 text-white rajdhani-medium capitalize border border-violet-500 focus:border-none caret-violet-500"
+            required />
+        </fieldset>
 
-<fieldset class="flex flex-col items-center justify-center w-[90%] min-h-[10px]">
-  <legend><label for="name" class="text-lg rajdhani-medium text-justify capitalize text-violet-500">Name</label></legend><br>
-  <input type="text" name="name" id="name" placeholder="What is your name?" class="w-full h-[50px] rounded-md pl-4 bg-gray-800 focus:outline-none focus:ring ring-purple-600 text-white rajdhani-medium capitalize border border-violet-500 focus:border-none caret-violet-500" required>
-</fieldset>
+        <fieldset
+          class="flex flex-col items-center justify-center w-[90%] min-h-[10px]">
+          <legend>
+            <label
+              for="email"
+              class="text-lg rajdhani-medium text-justify capitalize text-violet-500"
+              >email</label
+            >
+          </legend>
+          <br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="What is your email?"
+            class="w-full h-[50px] rounded-md pl-4 bg-gray-800 focus:outline-none focus:ring ring-purple-600 text-white rajdhani-medium capitalize border border-violet-500 focus:border-none caret-violet-500"
+            required />
+        </fieldset>
 
-<fieldset class="flex flex-col items-center justify-center w-[90%] min-h-[10px]">
-  <legend><label for="email" class="text-lg rajdhani-medium text-justify capitalize text-violet-500">email</label></legend><br>
-  <input type="text" name="email" id="email" placeholder="What is your email?" class="w-full h-[50px] rounded-md pl-4 bg-gray-800 focus:outline-none focus:ring ring-purple-600 text-white rajdhani-medium capitalize border border-violet-500 focus:border-none caret-violet-500" required>
-</fieldset>
+        <legend class="w-[90%]">
+          <label
+            for="message"
+            class="text-lg rajdhani-medium text-justify capitalize text-violet-500"
+            >Message</label
+          >
+        </legend>
 
-  <legend class="w-[90%]"><label for="message" class="text-lg rajdhani-medium text-justify capitalize text-violet-500">Message</label></legend>
-  
-  <textarea name="message" id="message" cols="30" rows="20" class="w-full h-[50px] rounded-md pl-4 bg-gray-800 focus:outline-none focus:ring ring-purple-600 text-white rajdhani-medium capitalize border border-violet-500 focus:border-none max-w-[90%] pt-4 caret-violet-500 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-purple-700 scrollbar-track-inherit hover:scrollbar-thumb-purple-900" placeholder="What is your message or email body?" required></textarea><br>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="20"
+          class="w-full h-[50px] rounded-md pl-4 bg-gray-800 focus:outline-none focus:ring ring-purple-600 text-white rajdhani-medium capitalize border border-violet-500 focus:border-none max-w-[90%] pt-4 caret-violet-500 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-purple-700 scrollbar-track-inherit hover:scrollbar-thumb-purple-900"
+          placeholder="What is your message or email body?"
+          required></textarea
+        ><br />
 
-  <p class="rajdhani-bold text-md text-red-600 w-[90%] text-justify">Please note that this form is currently under construction</p>
+        <p class="rajdhani-bold text-md text-red-600 w-[90%] text-justify">
+          Please note that this form is currently under construction
+        </p>
 
+        <div class="flex items-center justify-between w-[90%]">
+          <span
+            class="bg-gradient-to-r from-red-500 to-pink-500 rounded-md text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-red-400 hover:to-pink-500 py-2 w-[45%] text-center uppercase cursor-pointer"
+            id="cancel"
+            >cancel</span
+          >
 
-  <div class="flex items-center justify-between w-[90%]">
-
-  <span class="bg-gradient-to-r from-red-500 to-pink-500 rounded-md text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-red-400 hover:to-pink-500 py-2 w-[45%] text-center uppercase cursor-pointer" id="cancel">cancel</span>
-
-
-  <button class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-md text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-2 w-[45%] text-center uppercase" id="cancel">SEND</button>
-  </div>
-
+          <button
+            class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-md text-white condensed-bold shadow-md hover:bg-gradient-to-l hover:from-indigo-400 hover:to-purple-500 py-2 w-[45%] text-center uppercase"
+            id="cancel">
+            SEND
+          </button>
+        </div>
       </form>
     </section>
 
@@ -357,8 +754,7 @@
           class="text-md"
           target="_blank"
           ><span id="copyrightYears"></span> Dumisa</a
-        >&nbsp;
-        <span class="reservrYear"></span>.&nbsp;All&nbsp;rights&nbsp;reserved.
+        >&nbsp; <span class="year"></span>.&nbsp;All&nbsp;rights&nbsp;reserved.
       </p>
 
       <!-- social media -->
