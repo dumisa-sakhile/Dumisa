@@ -1,4 +1,11 @@
 import './style.css'
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+
+AOS.init({
+  offset: 300, // offset (in px) from the original trigger point
+  duration: 1000, // values from 0 to 3000, with step 50ms
+});
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
