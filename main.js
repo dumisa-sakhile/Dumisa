@@ -144,7 +144,7 @@ $("#share").addEventListener("click",function(){
         await navigator.share({
           title: "Dumisa's Portfolio",
           text: "Link to Dumisa's Portfolio",
-          url: "https://dumisa-sakhile.netlify.app/",
+          url: "https://dumisa.onrender.com",
         });
         console.log("Data was shared successfully");
       } catch (err) {
